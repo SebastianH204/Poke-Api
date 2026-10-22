@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "Taller semana 8: datos de la API, tres estados y favoritos",
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./src/entrada.css -o ./css/tailwind.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./src/entrada.css -o ./css/tailwind.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/entrada.css -o ./css/tailwind.css",
+    "validar" : "html-validate \"*.html\""
   },
   "author": "Sebastian Herrera Rueda",
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
     "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "html-validate": "^8.4.0"
   }
 }
