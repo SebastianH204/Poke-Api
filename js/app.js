@@ -40,7 +40,7 @@ const tarjetaHTML = (p) => {
   <article class="group relative flex flex-col overflow-hidden rounded-2xl bg-white shadow transition
                   hover:-translate-y-1 hover:shadow-xl dark:bg-slate-800">
     <div class="overflow-hidden bg-slate-100 dark:bg-slate-700">
-      <img src="${p.sprites.other['official-artwork'].front_default}" alt="${p.name}"
+      <img src="${p.sprites.other['official-artwork'].front_default}" alt="${p.name}" loading="lazy"
            class="aspect-square w-full object-contain p-4 transition group-hover:scale-105">
     </div>
     <button type="button" data-fav="${p.id}" aria-pressed="${fav}"
